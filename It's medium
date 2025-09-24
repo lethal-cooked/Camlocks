@@ -1,0 +1,32 @@
+getgenv().phyx_target = {
+    ["Main"] = {
+       ["Prediction"] = { Horizontal = 0.152692, Vertical = 120337812 }, -- // AutoPred will save u
+       ["Partz"] = { "UpperTorso", "Head", "UpperTorso" },
+       ["Air Delay"] = { true, delay = 0.14, delay2 = 0.37 }, -- // Ts will also be auto set-up if you turn on ping based.
+       ["Ping Based"] = all, -- // Options: "vertical", "horizontal", "all" ( auto air included if u putted "vertical" or "all")
+       ["Resolver Smoothness"] = 0.110,
+       ["Dot"] = true,
+       ["Notification"] = true,
+       ["Knock Unlock"] = true,
+       ["Look At"] = true -- // not done
+    },
+    ["Aim Assist"] = {
+       ["Cam Enabled"] = true,
+       ["Partz"] = "UpperTorso",
+       ["Use Smoothness"] = true,
+       ["Smoothness Value"] = 0.61
+    },
+    ["GUIs"] = {
+       ["Big Gui"] = false,
+       ["Save Position"] = true,
+       ["Auto Air"] = true,
+       ["Buy Items"] = true, -- // Only works on VFS games.
+       ["Reset"] = true,
+       ["Leave"] = false,
+       ["Bullet Tp"] = true, -- //  works most dh games
+       ["Trigger Bot"] = { false, delay = 5.5 }, -- // under maintenance, but works without delay.
+       ["Macro"] = { true, type = "Legit" } -- // Can be: "Legit" , "Speed" , "CFrame".
+    }
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/plah911/phyx/refs/heads/main/last%20upd"))();
